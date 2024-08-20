@@ -8,7 +8,7 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-    background-color: darkgrey;  /* temp */
+    background-color: rgb(255, 255, 255);  /* temp */
 }
 
 img {
@@ -19,12 +19,13 @@ img {
     height: 100vh;  /* TODO: is this necessary */
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-color: aliceblue;
-    background-color: antiquewhite;
+    background-color: rgb(181, 12, 0);
+    gap: 15px;
 }
 
 .sidebar {
-    grid-row: 1/2;
+    /* grid-row: 1/2;  no effect */
+    background-color: darkseagreen;
 }
 
 .header {
@@ -37,19 +38,39 @@ img {
     background-color:burlywood;
     display: grid;
     grid-template-rows: 1fr 6fr;
+    gap: 15px;
 }
 
 .content {
     background-color:cornflowerblue;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 15px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 1rem;
+}
+
+.card {
+    background-color: aliceblue;
+    border-left: 0.5rem solid darkorange;
+    border-radius: 0.5rem;
 }
 
 .other {
     background-color: darkgreen;
     display: grid;
+    gap: 15px;
 }
 
 .news {
     background-color:turquoise;
+}
+
+.trending {
+    background-color:blueviolet;
 }
