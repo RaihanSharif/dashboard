@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: darkgrey;  /* temp */
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    height: 100vh;  /* TODO: is this necessary */
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: aliceblue;
+    background-color: antiquewhite;
+}
+
+.sidebar {
+    grid-row: 1/2;
+}
+
+.header {
+    background-color:aquamarine;
+
+    /* height: 200px;  TODO: how to not set explicit height */
+}
+
+.main {
+    background-color:burlywood;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+.content {
+    background-color:cornflowerblue;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.other {
+    background-color: darkgreen;
+    display: grid;
+}
+
+.news {
+    background-color:turquoise;
+}
