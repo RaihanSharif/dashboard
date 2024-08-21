@@ -61,10 +61,15 @@ img {
     background-color: aliceblue;
     border-left: 0.5rem solid darkorange;
     border-radius: 0.5rem;
-    display: grid;
-    grid-template-rows: auto auto auto;
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
     
+}
+
+.card * {
+    margin: 0.5rem 0 0.5rem;
+
 }
 
 .card .icons {
