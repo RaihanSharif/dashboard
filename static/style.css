@@ -19,17 +19,17 @@ img {
 .container {
     height: 100vh;  /* TODO: is this necessary */
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
 }
 
 .sidebar {
-    background-color: darkseagreen;
+    background-color: rgb(81, 121, 196);
     padding: 1rem;
     color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    flex-wrap: wrap;
+    display: grid;
+    gap: 3rem;
+    font-weight: bold;
+    grid-template-rows: auto auto 1fr;
 }
 
 .header {
@@ -105,4 +105,22 @@ img {
 .logo-container img {
     max-width: 4rem;
     filter: invert(100%);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.menu img {
+    max-width: 1.5rem;
+    filter: invert(100%);
+}
+
+.menu>div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
