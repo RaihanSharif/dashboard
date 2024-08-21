@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html {
@@ -64,8 +65,8 @@ img {
     background-color: aliceblue;
     border-left: 0.5rem solid orange;
     border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: max-content 1fr auto;
     padding: 1rem;
     
 }
