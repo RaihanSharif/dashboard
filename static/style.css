@@ -23,13 +23,16 @@ img {
     height: 100vh;  /* TODO: is this necessary */
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-color: rgb(181, 12, 0);
-    gap: 15px;
 }
 
 .sidebar {
-    /* grid-row: 1/2;  no effect */
     background-color: darkseagreen;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    flex-wrap: wrap;
 }
 
 .header {
@@ -96,4 +99,17 @@ img {
 
 .trending {
     background-color:blueviolet;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.logo-container img {
+    max-width: 4rem;
+    filter: invert(100%);
 }
