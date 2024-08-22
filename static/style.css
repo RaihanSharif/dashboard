@@ -34,13 +34,53 @@ img {
 
 .header {
     background-color:aquamarine;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
 
-    /* height: 200px;  TODO: how to not set explicit height */
+}
+
+.header div {
+    padding: 1rem;
+}
+.search-container form {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+}
+.search-container button {
+    background-color: #e2e8f000;
+    border: 0px;
+    width: 2rem;
+    stroke-width: 2;
+}
+
+#search-input {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+
+}
+
+.header img {
+    max-width: 2rem;
+}
+
+.search-container button {
+    width: 1.5rem;
+    height: 1.6rem;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0ch;
 }
 
 .main {
     display: grid;
     grid-template-rows: 1fr 6fr;
+    border: 0px solid white;
 }
 
 .content {
