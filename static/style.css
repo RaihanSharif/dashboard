@@ -35,26 +35,30 @@ img {
 .header {
     background-color:aquamarine;
     display: grid;
-    grid-template-rows: 1fr 1fr;
     grid-template-columns: 2fr 1fr;
     align-items: center;
 
 }
 
 .header div {
-    padding: 1rem;
+    padding: 3rem;
+}
+
+.search-container {
+    background-color: rgb(44, 187, 25);
 }
 .search-container form {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: auto 1fr;
+    background-color: blueviolet;
+    display: flex;
     gap: 1rem;
+
 }
 .search-container button {
     background-color: #e2e8f000;
     border: 0px;
-    width: 2rem;
-    stroke-width: 2;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0ch;
 }
 
 #search-input {
@@ -62,20 +66,15 @@ img {
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
+    flex: 1;
+    background-color: lightgray;
 
 }
 
 .header img {
-    max-width: 2rem;
+    width: 2rem;
 }
 
-.search-container button {
-    width: 1.5rem;
-    height: 1.6rem;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0);
-    border: 0ch;
-}
 
 .main {
     display: grid;
