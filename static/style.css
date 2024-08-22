@@ -33,32 +33,33 @@ img {
 }
 
 .header {
-    background-color:aquamarine;
+    background-color: #ffffff;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr auto;
     align-items: center;
+    font-weight: bold;
 
 }
 
 .header div {
-    padding: 3rem;
+    padding: 2rem;
 }
 
-.search-container {
-    background-color: rgb(44, 187, 25);
-}
 .search-container form {
-    background-color: blueviolet;
     display: flex;
     gap: 1rem;
 
+
 }
 .search-container button {
-    background-color: #e2e8f000;
     border: 0px;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0);
     border: 0ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #search-input {
@@ -66,14 +67,29 @@ img {
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
+    border: 0px solid;
     flex: 1;
-    background-color: lightgray;
+    background-color: #e3e8f1;
+    padding: 0 1rem 0;
 
+}
+
+.alert-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .header img {
     width: 2rem;
 }
+.header .profile-pic {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+
 
 
 .main {
