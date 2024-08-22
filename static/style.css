@@ -133,8 +133,8 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: max-content;
-    gap: 15px;
-    padding: 1rem;
+    gap: 1.5rem;
+    padding: 1.5rem;
     align-content: baseline;
 }
 
