@@ -42,7 +42,7 @@ img {
 }
 
 .header div {
-    padding: 2rem;
+    padding: 1rem 2rem;
 }
 
 .search-container form {
@@ -78,6 +78,7 @@ img {
     display: flex;
     align-items: center;
     gap: 1rem;
+    justify-content: center;
 }
 
 .header img {
@@ -89,7 +90,31 @@ img {
     border-radius: 50%;
 }
 
+.greeting {
+    display: flex;
+    align-items: center;
+}
 
+.greeting img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.actions button {
+    padding: 0.5rem 2rem;
+    color: white;
+    background-color: #1a92d5;
+    border: 0px;
+    border-radius: 1rem;
+}
 
 
 .main {
